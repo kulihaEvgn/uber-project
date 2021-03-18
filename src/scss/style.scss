@@ -14,9 +14,17 @@ nav{
 .menu{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     list-style-type: none;
     padding: 13px 71px;
     margin: 0;
+}
+.menu__item{
+    border-right: 2px dotted black;
+    padding-right: 30px;
+    &:last-child{
+        border-right: none;
+    }
 }
 .menu__item_link{
     font-weight: 300;
@@ -24,8 +32,6 @@ nav{
     text-decoration: none;
     color: #fff;
     line-height: 15px;
-    border-right: 2px dotted black;
-    padding-right: 30px;
 }
 
 
@@ -118,18 +124,31 @@ nav{
     display: block;
     margin: 116px auto 0;
 }
-
 .advantage{
-    padding: 77px 0 67px;
+    padding: 20px 0 64px;
+}
+.lable{
+    width: 115px;
+    padding: 7px 0;
+    background-color: #000;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    font-size: 11px;
+    width: 10%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 4px;
 }
 .advantage__title{
+    margin-top: 33px;
     font-size: 38px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 20px;
 }
 .advantage__items{
     padding: 0 35px;
+    margin-top: 16px;
 }
 .advantage__item{
     display: flex;

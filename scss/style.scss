@@ -2,6 +2,12 @@ $blue:#1EACC7;
 $red:#FF5656;
 $black:#222;
 
+@mixin btn__hover{
+    &:hover{background-image: none;
+        background-color: $blue;
+    }
+}
+
 
 html{
     font-family: 'Roboto', sans-serif;
@@ -29,6 +35,7 @@ nav{
     padding-right: 30px;
     &:last-child{
         border-right: none;
+        padding: 0;
     }
 }
 .menu__item_link{
@@ -84,6 +91,8 @@ nav{
     border: 0;
     border-radius: 4px;
     padding: 15px 30px;
+    transition: all .3s ease;
+    @include btn__hover
 }
 .promo{
     background: url(../img/uber_bg.jpg) center center/cover no-repeat;
@@ -128,6 +137,8 @@ nav{
 
     display: block;
     margin: 116px auto 0;
+    transition: all .2s linear;
+    @include btn__hover
 }
 .advantage{
     padding: 20px 0 64px;
@@ -226,7 +237,7 @@ nav{
         color: #fff;
         text-transform: uppercase;
     }
-    & .plus{
+    & .plus {
         width: 29px;
         height: 29px;
         background: #000;
@@ -239,6 +250,33 @@ nav{
         left: 50%;
         transform: translateX(-50%);
         cursor: pointer;
+
+            &::before{
+                content: '';
+                display: block;
+                width: 14px;
+                height: 2px;
+                background-color: $blue;
+                transition: all .3s ease;
+            }
+            &::after{
+                content: '';
+                display: block;
+                height: 14px;
+                width: 2px;
+                background-color: $blue;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: all .3s ease;
+            }
+            &:hover {
+                &::before, &::after{
+                    background-color: $red;
+                }
+        
+        }
+
     }
 
     &_1{
@@ -291,4 +329,34 @@ nav{
     font-size: 17px;
     line-height: 24px;
     text-align: center;
+}
+
+
+
+.req{
+    padding: 66px 87px;
+}
+
+.req__item_list{
+    list-style: none;
+
+    li {
+        div {
+            width: 21px;
+            height: 21px;
+            border: 1px solid $blue;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::before{
+                content: '';
+                display: block;
+                width: 12px;
+                height: 1px;
+                background-color: $blue;
+                transform: rotate(-60deg) translate(2px,3px);
+            }
+        }
+    }
 }

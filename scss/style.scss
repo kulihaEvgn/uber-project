@@ -3,8 +3,8 @@ $red:#FF5656;
 $black:#222;
 
 @mixin btn__hover{
-    &:hover{background-image: none;
-        background-color: $blue;
+    &:hover{
+        background: $blue;
     }
 }
 
@@ -144,16 +144,17 @@ nav{
     padding: 20px 0 64px;
 }
 .lable{
-    padding: 7px 20px;
     background-color: #000;
     text-transform: uppercase;
     color: #fff;
     font-weight: 400;
     font-size: 11px;
-    width: 10%;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
-
+    width: 112px;
+    height: 24px;
     &--white{
         background-color: #fff;
         color: #070716;
@@ -203,6 +204,8 @@ nav{
 }
 
 
+
+
 .mobile{
     background:url(../img/mobile/mobile_bg.jpg) center (center/cover) no-repeat;
     padding: 46px 0 80px;
@@ -229,6 +232,7 @@ nav{
     position: relative;
     margin: 0 auto;
     margin-bottom: 19px;
+    border-radius:2px;
 
     &_title{
         font-weight: 400;
@@ -334,29 +338,113 @@ nav{
 
 
 .req{
-    padding: 66px 87px;
+    padding: 66px 27px;
+    &__title{
+        margin-top: 37px;
+        font-weight: 700;
+        font-size: 38px;
+        color: $black;
+        text-align: center;
+        text-transform: uppercase; 
+    }
 }
-
-.req__item_list{
-    list-style: none;
-
-    li {
-        div {
-            width: 21px;
-            height: 21px;
-            border: 1px solid $blue;
-            border-radius: 50%;
+.req__item{
+    margin-bottom: 60px;
+    
+    &_title{
+        font-weight: 400;
+        font-size: 22px;
+        color: $blue;
+    }
+    &_list{
+        margin-top: 20px;
+        padding-left: 12px;
+        list-style: none;
+        li {
+            margin-top: 8px;
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 24px;
+            color: $black;
             display: flex;
             align-items: center;
-            justify-content: center;
+            &:first-child{
+                margin-top: 0;
+            }
             &::before{
-                content: '';
+                content:'';
                 display: block;
-                width: 12px;
-                height: 1px;
-                background-color: $blue;
-                transform: rotate(-60deg) translate(2px,3px);
+                background: url(../img/req.png) center (center/contain) no-repeat;
+                min-width: 21px;
+                height: 20px;
+                margin-right: 12px;
+            }       
+        }
+    }
+    &_descr{
+        margin-top: 25px;
+        font-weight: 30;
+        font-size: 17px;
+        color: $blue;
+    } 
+    &_warning{
+        .req__item_title{
+            color: $red;
+        }
+        li{
+            &::before{
+                background: url(../img/war.png) center (center/contain) no-repeat;
             }
         }
+              
+    }
+}
+
+
+
+.world{
+    background: #080816 url(../img/world/world_bg.png) center (center/contain) no-repeat;
+    padding: 46px 0;
+    position: relative;
+}
+.world__title{
+    margin-top: 26px;
+    font-weight: 700;
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+}
+.world__subtitle{
+    margin-top: 2px;
+    font-weight: 400;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+}
+.wold__link{
+    margin-top: 456px;
+    color:#1FBAD6;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__social{
+    display: flex;
+    div{
+        width: 35px;
+        height: 35px;
+        border-radius:55%;
+        background-color: #070716;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

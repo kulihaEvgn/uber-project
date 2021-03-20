@@ -1,3 +1,8 @@
+$blue:#1EACC7;
+$red:#FF5656;
+$black:#222;
+
+
 html{
     font-family: 'Roboto', sans-serif;
 }
@@ -37,7 +42,7 @@ nav{
 
 
 .subheader{
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(2, 2, 2, 0.6);
     padding: 19px;
     position: absolute;
     width: 100%;
@@ -72,7 +77,7 @@ nav{
     font-size: 14px;
     color: #FFFFFF;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
-    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    background: linear-gradient(0deg, $blue 0%, #4CE2FF 100%);
     text-align: center;
     text-transform: uppercase;
 
@@ -113,7 +118,7 @@ nav{
     font-size: 18px;
     color: #FFFFFF;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
-    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    background: linear-gradient(0deg, $blue 0%, #4CE2FF 100%);
     text-align: center;
     text-transform: uppercase;
 
@@ -137,14 +142,18 @@ nav{
     width: 10%;
     text-align: center;
     margin: 0 auto;
-    border-radius: 4px;
+
+    &--white{
+        background-color: #fff;
+        color: #070716;
+    }
 }
 .advantage__title{
     margin-top: 33px;
     font-size: 38px;
     font-weight: 700;
     text-align: center;
-    color: #222;
+    color: $black;
 }
 .advantage__items{
     padding: 0 35px;
@@ -161,7 +170,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #1EACC7;
+    background: $blue;
     border-radius: 50%;
     margin-right: 25px;
     & img{
@@ -174,7 +183,7 @@ nav{
 .advantage__item_title{
     font-weight: 700;
     font-size: 17px;
-    color: #1EACC7;
+    color: $blue;
 }
 .advantage__item_descr{
     font-weight: 300;
@@ -192,14 +201,14 @@ nav{
     font-weight: 700;
     font-size: 38px;
     text-align: center;
-    color: #222;
+    color: $black;
     text-transform: uppercase;
 }
 .mobile__subtitle{
     margin-top: 10px;
     font-size: 17px;
     font-weight: 400;
-    color: #222;
+    color: $black;
     text-align: center;
 }
 .mobile__item{
@@ -250,4 +259,36 @@ nav{
     &_6{
         background: url(../img/mobile/img_6.png) center center/cover no-repeat;
     }
+}
+
+
+
+.avto{
+    background: url(../img/avto/bg_avto.jpg) center (center/cover) no-repeat;
+    padding: 54px 0 137px;
+}
+.avto__title{
+    margin-top: 26px;
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    color: #fff;
+}
+.avto__subtitle{
+    margin-top: 1px;
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+    color: #fff;
+    line-height: 17px;
+}
+.avto__avtomobile{
+    display: block;
+    margin: 0 auto;
+}
+.avto__footer-text{
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
 }

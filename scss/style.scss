@@ -14,6 +14,9 @@ html{
 }
 a{
     font-family: inherit;
+    &:hover{
+        color: $blue;
+    }
 }
 header{
     position: relative;
@@ -91,7 +94,6 @@ nav{
     border: 0;
     border-radius: 4px;
     padding: 15px 30px;
-    transition: all .3s ease;
     @include btn__hover
 }
 .promo{
@@ -137,7 +139,6 @@ nav{
 
     display: block;
     margin: 116px auto 0;
-    transition: all .2s linear;
     @include btn__hover
 }
 .advantage{
@@ -428,10 +429,16 @@ nav{
     display: block;
     text-align: center;
     text-transform: uppercase;
+    transition: all .2s ease;
+    &:hover{
+        color:#fff;
+    }
 }
 
 
 .footer{
+    max-width: 1920px;
+    margin: 0 auto;
     padding: 10px 0;
     hr{
         display: block;
@@ -461,9 +468,12 @@ nav{
         justify-content: center;
         align-items: center;
         margin-right: 4px;
+        transition: all .2s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
         img{
             display: block;
-
         }
     }
 }
@@ -479,6 +489,10 @@ nav{
 
         a{
             text-decoration: none;
+            transition: all .2s ease;
+            &:hover{
+                color: $blue;
+            }
         }
     }
     &_list-1{
@@ -492,6 +506,10 @@ nav{
                 font-size: 15px;
                 color: #070716;
                 text-transform: uppercase;
+                transition: all .2s ease;
+                &:hover{
+                    color: $blue;
+                }
             }
         }
        
@@ -509,6 +527,10 @@ nav{
                 font-size: 11px;
                 color: #999999;
                 text-transform: uppercase;
+                transition: all .2s ease;
+                &:hover{
+                    color: $blue;
+                }
                
             }
         }
@@ -520,6 +542,10 @@ nav{
         color: $blue;
         text-decoration: none;
         text-transform: uppercase;
+        transition: all .2s ease;
+        &:hover{
+            text-decoration: underline;
+        }
     }
 }
 .footer__apps{
@@ -535,6 +561,10 @@ nav{
         img{
             height: 35px;
             width: 35px;
+            transition: all .2s ease;
+            &:hover{
+                transform: scale(1.1);
+            }
         }
     }
 }

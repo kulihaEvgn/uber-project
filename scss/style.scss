@@ -431,13 +431,27 @@ nav{
 }
 
 
-
 .footer{
+    padding: 10px 0;
+    hr{
+        display: block;
+        margin: 0 auto;
+        border:0;
+        height: 6px;
+        width: 301px;
+        background-color: $blue;
+        opacity: 1;
+    }
+}
+.footer__inner{
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
 .footer__social{
     display: flex;
+    justify-content: center;
+    width: 25%;
     div{
         width: 35px;
         height: 35px;
@@ -446,5 +460,81 @@ nav{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-right: 4px;
+        img{
+            display: block;
+
+        }
+    }
+}
+.footer__menu{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &_list-1,&_list-2{
+        display: flex;
+        list-style: none;
+
+        a{
+            text-decoration: none;
+        }
+    }
+    &_list-1{
+        li{
+            margin-right: 60px;
+            &:last-child{
+                margin-right: 0;
+            }
+            a{
+                font-weight: 300;
+                font-size: 15px;
+                color: #070716;
+                text-transform: uppercase;
+            }
+        }
+       
+    }
+    &_list-2{
+        li{
+            margin-right: 21px;
+
+            &:last-child{
+                margin-right: 0;
+            }
+            
+            a{
+                font-weight: 300;
+                font-size: 11px;
+                color: #999999;
+                text-transform: uppercase;
+               
+            }
+        }
+       
+    }
+    &_lang{
+        font-weight: 400;
+        font-size: 11px;
+        color: $blue;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+.footer__apps{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    
+    div{
+        margin-right: 15px;
+        &:last-child{
+            margin-right: 0;
+        }
+        img{
+            height: 35px;
+            width: 35px;
+        }
     }
 }

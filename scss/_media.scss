@@ -1,0 +1,54 @@
+@media (max-width:1199px){
+    .menu__item{
+        padding-right: 18px;
+    }
+    .subheader{
+        padding-bottom: 0;
+        padding-top: 12px;
+        &__phone_link{
+            font-size: 19px;
+        }
+    }
+    .promo{
+        &__title{
+            font-size: 50px;
+        }
+        &__text{
+            font-size: 16px;
+        }
+    }
+    .advantage{
+        &__item{
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__item_img{
+            margin: 0 auto;
+        }
+        &__item_text{
+            margin-top: 15px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+@media (max-width:990px){
+    nav{
+        height: 45px;
+    }
+    .menu__item{
+        padding-right:6px;
+        a{
+            font-size: 12px;
+        }
+    }
+    .subheader{
+        &__btn{
+            margin-top: 6px;
+            width: 130px;
+            height: 35px;
+            font-size: 12px;
+
+        }
+    }
+}

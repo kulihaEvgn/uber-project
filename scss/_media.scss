@@ -48,7 +48,22 @@
             width: 130px;
             height: 35px;
             font-size: 12px;
-
+        }
+        .logo__descr{
+            font-size: 11px;
+        }
+    }
+    .promo{
+        &__title{
+            font-size: 40px;
+        }
+        &__subtitle{
+            font-size: 30px;
+        }
+    }
+    .mobile{
+        &__item_title{
+            font-size: 17px;
         }
     }
 }
@@ -73,7 +88,7 @@
     }
     .burger{
         position: absolute;
-        top: 10px;
+        top: 17px;
         right: 10px;
         width: 30px;
         height: 15px;
@@ -118,5 +133,99 @@
             font-size: 18px;
         }
        
+    }
+    .xs-hidden{
+        display: none;
+    }
+    
+    .xs-visible {
+        display: block;
+    }
+    .--flex_container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .subheader{
+        padding: 10px 0 5px;
+        &__btn{
+            margin-top: 0px;
+            width: 140px;
+            height: 30px;
+            font-size: 13px;
+        }
+        &__phone_link {
+            font-size: 15px;
+        }
+    }
+    .promo{
+        &__title{
+            font-size: 35px;
+        }
+        &__subtitle{
+            font-size: 26px;
+        }
+    }
+    .footer{
+        &__inner{
+            flex-wrap: wrap;
+        }
+        &__social{
+            order: 2;
+            margin: 0;
+            padding: 0;
+        }
+        &__menu{
+            order: 1;
+            margin: 0;
+            padding: 0;
+        }
+        &__apps{
+            order: 3;
+            margin-top: 40px;
+            p{
+                display: none;
+            }
+        }
+    }
+
+}
+@media (max-width: 575px){
+    .--flex_container{
+        margin-top: 5px;
+        align-items: center;
+    }
+    .logo__descr{
+        display: none;
+    }
+    nav{
+        width: 85%;
+    }
+    .promo__title{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .promo__subtitle{
+        font-size: 25px;
+    }
+    .promo__btn {
+        margin-top: 80px;
+    }
+    .subheader{
+        padding: 15px 0;
+    }
+    .subheader__btn{
+        display: none;
+    }
+    .subheader__phone_link{
+        font-size: 11px;
+        display: block;
+        margin-right: 20px;
+    }
+    .--flex_container_2{
+        display: flex;
+        align-items: center;
+
     }
 }

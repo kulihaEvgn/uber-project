@@ -184,6 +184,7 @@
         &__apps{
             order: 3;
             margin-top: 40px;
+            margin-right: 100px;
             p{
                 display: none;
             }
@@ -228,4 +229,44 @@
         align-items: center;
 
     }
+    .footer{
+        hr{
+            width: 200px;
+        }
+    }
+    .footer__inner{
+    }
+    .footer__menu_list-1{
+        li{
+            margin-right: 10px;
+            a{
+                font-size: 10px;
+            }
+        }
+    }
+    .footer__menu_list-2{
+        display: block;
+        li{
+            a{
+                font-size: 15px;
+            }
+        }
+    }
+    .footer__social{
+        margin-top: 15px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__apps{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 6px;
+        right: -17%;
+    }
+
+   
 }
